@@ -1,0 +1,42 @@
+.post{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(#000, 0.28);
+    margin-top: 25px;
+    width: 100%;
+
+    &:first-child {
+        margin-top: 15px;
+    }
+    a {
+        text-decoration: none;
+    }
+    &__author {
+        font-weight: bold;
+        color: #3498db;
+        border-bottom: #3498db 1px solid;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+        &__thumb {
+            height: 30px;
+            border-radius: 50%;
+        }
+        &__name {
+            margin-left: 10px;
+        }
+    }
+
+    &__body {
+        padding: 10px;
+        &__title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        &__body {
+            color: #34495e;
+            margin-top: 10px;
+        }
+    }
+}
