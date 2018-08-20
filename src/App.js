@@ -3,6 +3,8 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import logo from './logo.png'
 import './App.css'
 
+import PostsPage from './pages/Posts'
+
 class App extends Component {
   render() {
     return (
@@ -13,7 +15,7 @@ class App extends Component {
         </header>
         <div className="App-container">
             <Switch>
-                <Route exact path="/" render={props => <div>Posts</div>} />
+                <Route exact path="/" component={PostsPage} />
                 <Route exact path="/post/:id" render={props => <div>Single post: {props.match.params.id}</div>}/>
                 <Redirect exact from='*' to='/' />
             </Switch>
