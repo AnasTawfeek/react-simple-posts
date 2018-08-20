@@ -4,6 +4,7 @@ import logo from './logo.png'
 import './App.css'
 
 import PostsPage from './pages/Posts'
+import PostPage from './pages/Post'
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
         <div className="App-container">
             <Switch>
                 <Route exact path="/" component={PostsPage} />
-                <Route exact path="/post/:id" render={props => <div>Single post: {props.match.params.id}</div>}/>
+                <Route exact path="/post/:id" component={PostPage}/>
                 <Redirect exact from='*' to='/' />
             </Switch>
         </div>

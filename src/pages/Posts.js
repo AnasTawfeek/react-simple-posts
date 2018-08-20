@@ -4,7 +4,7 @@ import {POSTS_API, USER_API} from '../constants'
 
 import Post from '../components/Post'
 
-export default class Posts extends Component {
+export default class PostsPage extends Component {
     constructor(){
         super();
         this.state = {

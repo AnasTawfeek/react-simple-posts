@@ -1,0 +1,26 @@
+.comment {
+    background: #34495e;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    margin: 15px auto 0 auto;
+    &__author {
+        padding: 10px 10px 0 10px;
+        &__name {
+            font-weight: bold;
+            line-height: 20px;
+            color: #ecf0f1;
+        }
+        &__email {
+            font-size: 12px;
+            line-height: 14px;
+            font-style: italic;
+            color: #bdc3c7;
+        }
+    }
+
+    &__body {
+        padding: 10px;
+        color: #fff;
+        line-height: 24px;
+    }
+}
